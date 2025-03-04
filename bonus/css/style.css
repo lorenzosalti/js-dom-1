@@ -1,0 +1,26 @@
+/*** RESET ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** GLOBAL ***/
+img {
+  display: block;
+}
+
+.container {
+  margin: 30px auto 0;
+  width: fit-content;
+}
+
+/*** LAMPS ***/
+.hidden {
+  display: none;
+}
+
+/*** BUTTON ***/
+#on-off-btn {
+  padding: 10px;
+}
