@@ -5,6 +5,14 @@ const button = document.getElementById('on-off-btn');
 
 
 button.addEventListener('click', function () {
-  lampOff.className = 'hidden';
-  lampOn.className = '';
+  if (lampOff.className === '') {
+    lampOff.className = 'hidden';
+    lampOn.className = '';
+  } else {
+    lampOff.className = '';
+    lampOn.className = 'hidden';
+  }
 });
+
+console.log(lampOff.classList);
+console.log(lampOn.classList);
