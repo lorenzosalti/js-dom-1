@@ -5,6 +5,7 @@ const button = document.getElementById('on-off-btn');
 
 
 button.addEventListener('click', function () {
+
   if (lampOff.className === '') {
     lampOff.className = 'hidden';
     lampOn.className = '';
@@ -12,7 +13,10 @@ button.addEventListener('click', function () {
     lampOff.className = '';
     lampOn.className = 'hidden';
   }
-});
 
-console.log(lampOff.classList);
-console.log(lampOn.classList);
+  if (button.innerText.includes('ACCENDI')) {
+    button.innerText = 'SPEGNI';
+  } else {
+    button.innerText = 'ACCENDI';
+  }
+});
