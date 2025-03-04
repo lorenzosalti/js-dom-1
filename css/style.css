@@ -16,7 +16,7 @@ img {
 }
 
 /*** LAMPS ***/
-#light-on {
+.hidden {
   display: none;
 }
 
